@@ -1,0 +1,52 @@
+<nav class="mt-nav-bar" uk-sticky="top: 120; animation: uk-animation-slide-top;">
+    {{> star_collection }}
+    <div class="mt-nav-container">
+        <div class="mt-nav">
+            <div class="mt-nav-left">
+                <img src="assets/img/logo.png" alt="">
+            </div>
+            <div class="mt-nav-right">
+                <ul class="mt-nav-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Articles</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Join</a></li>
+                </ul>
+            </div>
+            <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#!" uk-toggle="target: #offcanvas-nav-primary"></a>
+        </div>
+    </div>
+</nav>
+<div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
+    {{> star_collection}}
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#"> About </a>
+            </li>
+            <li>
+                <a href="#"> Team</a>
+            </li>
+            <li>
+                <a href="#"> Articles</a>
+            </li>
+            <li>
+                <a href="#"> Contact </a>
+            </li>
+            <li>
+                <a href="#"> Login</a>
+            </li>
+            <li>
+                <a href="#"> Join</a>
+            </li>
+        </ul>
+
+    </div>
+</div>

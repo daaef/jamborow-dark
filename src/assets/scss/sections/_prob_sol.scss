@@ -1,0 +1,53 @@
+.problem--solution {
+  min-height: 100vh;
+  width: 100%;
+  padding: 80px 0;
+    .mt-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+  .mt-problem {
+    padding-right: 20px;
+    padding-top: 80px;
+    ul {
+      ::before {
+        filter: brightness(2.5);
+      }
+      li {
+        color: #efefef;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .mt-solution {
+    padding-left: 20px;
+    .mt-sol-bg {
+      min-height: calc(100vh - 200px);
+      background-image: url(../img/sol_bg.png);
+      background-size: 100% 100%;
+      padding: 13% 16% 12% 23%;
+      ul {
+        li {
+          font-weight: 900;
+          margin-top: 5px;
+          font-size: 1rem;
+          position: relative;
+        }
+      }
+      .uk-list-bullet > li::before {
+        //background-image: none;
+        height: 15px;
+        width: 15px;
+        background: #367D71;
+        left: 0;
+        top: .7rem;
+        transform: translateY(-50%);
+        position: absolute;
+        border-radius: 50%;
+      }
+    }
+  }
+}

@@ -1,0 +1,146 @@
+.mt-header-pattern-design:hover .mt-header--pattern.uk-svg .blue-part {
+  stroke: #da774a;
+}
+
+.mt-header-pattern-design:hover .mt-header--pattern.uk-svg .red-part {
+  stroke: #44ab96;
+}
+
+.mt-header-pattern-design:hover .mt-header--pattern.uk-svg .yellow-part {
+  stroke: #4484ab;
+}
+
+.mt-header-pattern-design:hover .mt-header--pattern.uk-svg .green-part {
+  stroke: #ffb017;
+}
+
+.mt-header-pattern-design:hover .mt-header--pattern.uk-svg .orange-part {
+  stroke: #e53855;
+}
+
+.mt-header-pattern-design:hover .mt-header--pattern.uk-svg .filed.orange {
+  fill: #e53855;
+}
+
+.mt-header-pattern-design:hover .mt-header--pattern.uk-svg .filed.yellow {
+  fill: #4484ab;
+}
+
+.mt-header-pattern-design .mt-header--pattern.uk-svg path {
+  transition: all .3s ease-in-out;
+}
+
+.uk-sticky-placeholder {
+  display: none!important;
+}
+
+.uk-offcanvas-bar{
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  a {
+    font-family: "Luckiest Guy", sans-serif;
+    color: #fff;
+    letter-spacing: 1.5px;
+    font-size: 1rem;}
+}
+
+.mt-nav-bar {
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  &.uk-sticky-fixed {
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    overflow: hidden;
+    #stars,
+    #stars2,
+    #stars3 {
+      display: block;
+      position: absolute;
+    }
+  }
+  .mt-nav-container {
+    height: 100%;
+    .mt-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+    }
+  }
+  a {
+    font-family: "Luckiest Guy", sans-serif;
+    color: #fff;
+    letter-spacing: 1.5px;
+    font-size: 1rem;}
+}
+
+.mt-nav-left {
+  display: flex;
+  align-items: center;
+  img {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+  }
+}
+
+.mt-nav-right {
+  display: flex;
+  align-items: center;
+  .mt-nav-list {
+    display: flex;
+    margin: 0;
+    li {
+      margin-right: 20px;
+    }
+  }
+}
+
+.uk-navbar-toggle {
+  display: none;
+}
+
+.mt-main-header-content {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .mt-header-writeup {
+    width: 50%;
+    h1 {
+      color: #ffffff;
+    }
+  }
+  .mt-header-pattern-design {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    .mt-header--pattern.uk-svg {
+      height: calc((100vh - 200px));
+      width: 100%;
+    }
+  }
+}
+
+.header-play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 90px;
+  transform: translate(-40% , -50%);
+}
+
+.header-play-btn path {
+  transition: all .3s ease-in-out;
+}
+
+.mt-header-pattern-design:hover .header-play-btn path.circle{
+    fill: #4484ab;
+  stroke: #262626;
+}
+
+.mt-header-pattern-design:hover .header-play-btn path.play{
+  stroke: #262626;
+}

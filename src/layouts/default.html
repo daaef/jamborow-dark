@@ -1,0 +1,54 @@
+{{!-- This is the base layout for your project, and will be used on every page unless specified. --}}
+
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {{#if title}}
+            {{title}}
+        {{else}}
+            {{site.title}} | {{site.tagline}}
+        {{/if}}
+
+    </title>
+    <meta property="og:title" content="{{site.title}} | {{site.tagline}}">
+    {{#if meta}}
+        {{#if meta.author}}
+            <meta name="author" content="{{meta.author}}">
+        {{/if}}
+
+        {{#if meta.description}}
+            <meta name="description" content="{{meta.description}}">
+        {{/if}}
+
+        {{#if meta.keywords}}
+            <meta name="keywords" content="{{meta.keywords}}">
+        {{/if}}
+
+        {{#if meta.robots}}
+            <meta name="robots" content="{{meta.robots}}">
+        {{/if}}
+    {{/if}}
+    <link rel="stylesheet" href="{{root}}assets/css/app.css">
+</head>
+<body class="{{ bodyclass }}">
+<div id="introLoader" class="introloader">
+    <div class="loader-container">
+        <div id='stars'></div>
+        <div id='stars2'></div>
+        <div id='stars3'></div>
+        <div class="spinner-inner">
+            <img src="assets/img/logo.png" alt="">
+        </div>
+    </div>
+</div>
+    {{> navbar }}
+{{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+{{> body}}
+
+<script src="{{root}}assets/js/app.js"></script>
+</body>
+</html>
